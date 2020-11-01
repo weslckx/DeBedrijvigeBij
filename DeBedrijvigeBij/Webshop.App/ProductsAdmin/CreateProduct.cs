@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Webshop.App.ViewModels;
 using Webshop.Domain.Models;
 
-namespace Webshop.App.Products
+namespace Webshop.App.ProductsAdmin
 {
     public class CreateProduct
     {

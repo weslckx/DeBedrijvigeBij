@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Webshop.App.Products
+namespace Webshop.App.ProductsAdmin
 {
-    class ReadProduct
+    class UpdateProduct
     {
     }
 }

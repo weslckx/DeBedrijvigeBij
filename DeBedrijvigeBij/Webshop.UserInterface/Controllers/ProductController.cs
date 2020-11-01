@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shop.Data;
-using Webshop.App.Products;
+using Webshop.App.ProductsAdmin;
 using Webshop.App.ViewModels; // proper of niet?
 using Webshop.Domain.Models;
 
