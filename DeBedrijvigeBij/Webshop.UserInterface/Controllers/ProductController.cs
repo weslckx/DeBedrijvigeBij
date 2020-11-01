@@ -21,6 +21,11 @@ namespace Webshop.UserInterface.Controllers
             _dbContext = dbContext;
         }
 
+        public IActionResult Index()
+        {
+            return View(new ReadProducts(_dbContext).Get());
+        }
+
         public IActionResult CreateProduct()
         {
             return View();
@@ -44,7 +49,6 @@ namespace Webshop.UserInterface.Controllers
 
             return View(product);
         }
-
 
     }
 }
