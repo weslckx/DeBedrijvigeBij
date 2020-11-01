@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Webshop.App.ProductsAdmin
 {
-    class DeleteProduct
+    public class DeleteProduct
     {
         private readonly ApplicationDbContext _dbContext;
 

@@ -11,7 +11,7 @@ using Webshop.Domain.Models;
 
 namespace Webshop.App.ProductsAdmin
 {
-    class ReadProduct
+    public class ReadProduct
     {
         private readonly ApplicationDbContext _dbContext;
 
