@@ -10,12 +10,12 @@ namespace Webshop.App.Products
 {
     public class CreateProduct
     {
-        private ApplicationDbContext _DbContext;
+        private ApplicationDbContext _dbContext;
 
         // dependency Injection
-        public CreateProduct(ApplicationDbContext DbContext)
+        public CreateProduct(ApplicationDbContext dbContext)
         {
-            _DbContext = DbContext;
+            _dbContext = dbContext;
         }
 
         //public void Do(string name, string description, decimal price)
@@ -31,8 +31,8 @@ namespace Webshop.App.Products
 
         public async Task Add(Product product) // task<int> bv, of task == gewoon void
         {
-            _DbContext.Products.Add(product);
-           await _DbContext.SaveChangesAsync();
+            _dbContext.Products.Add(product);
+           await _dbContext.SaveChangesAsync();
         }
     }
 }
