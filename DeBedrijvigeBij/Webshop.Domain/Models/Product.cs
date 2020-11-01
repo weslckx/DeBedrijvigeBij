@@ -11,6 +11,10 @@ namespace Webshop.Domain.Models
         public string Description { get; set; }
         public decimal Price { get; set; }
 
+        //Nav Prop
+        public ICollection<Stock> Stocks { get; set; } // only need add and remove, so ICollection
+        public ICollection<OrderProduct> OrderProducts { get; set; }
+
 
     }
 }
