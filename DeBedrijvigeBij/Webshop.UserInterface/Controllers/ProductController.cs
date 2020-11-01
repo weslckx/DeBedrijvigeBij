@@ -30,8 +30,21 @@ namespace Webshop.UserInterface.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateProduct([Bind("Name,Description,Price")] Product product)
         {
-            await new CreateProduct(_dbContext).Add(product);
-            return View();
+            if (ModelState.IsValid)
+            {
+                await new CreateProduct(_dbContext).Add(product);
+                return RedirectToAction("ProductCreated",product);
+            }
+
+            return View(product);
         }
+
+        public IActionResult ProductCreated(Product product)
+        {
+
+            return View(product);
+        }
+
+
     }
 }
